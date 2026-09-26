@@ -47,12 +47,9 @@ jobs:
     
 
     # 3. Export preset -> Xcode project
-    #    TODO: In addition to other mandatory fields (try running the export locally first),
-    #    you need to enable `application/export_project_only=true` and `application/delete_old_export_files_unconditionally=true`.
-    #    You can find these options in Advanced Options.
     - name: Export to Xcode project
       run: |
-        mkdir -p build/ios
+        mkdir -p inner_world/build/ios
         godot/Godot.app/Contents/MacOS/Godot --headless --path ./inner_world \
           --export-release "${IOS_PRESET}" build/ios/${NAME}.xcodeproj
 
@@ -60,9 +57,9 @@ jobs:
     - name: xcodebuild archive (unsigned)
       run: |
         xcodebuild archive \
-          -project build/ios/${NAME}.xcodeproj \
+          -project inner_world/build/ios/${NAME}.xcodeproj \
           -scheme "${NAME}" \
-          -archivePath build/ios/App.xcarchive \
+          -archivePath inner_world/build/ios/App.xcarchive \
           -configuration Release \
           CODE_SIGN_STYLE=Manual \
           CODE_SIGN_IDENTITY="" \
@@ -74,11 +71,11 @@ jobs:
     # 5. Package .ipa
     - name: Package IPA
       run: |
-        cd build/ios
+        cd inner_world/build/ios
         mkdir -p Payload
         cp -R App.xcarchive/Products/Applications/*.app Payload/
         zip -r "${NAME}.ipa" Payload
-        mv "${NAME}.ipa" ../../
+        mv "${NAME}.ipa" $GITHUB_WORKSPACE/
 
     # 6. Publish artifact
     - name: Upload IPA artifact
