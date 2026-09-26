@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://50bcjqx2uwjw"
+path="res://.godot/imported/木地板吱吱作响2 sound-wood-floor-creaking-2.mp3-0435e77e28462352a87d50c1ed441423.mp3str"
+
+[deps]
+
+source_file="res://source/Sounds/家具/木地板吱吱作响2 sound-wood-floor-creaking-2.mp3"
+dest_files=["res://.godot/imported/木地板吱吱作响2 sound-wood-floor-creaking-2.mp3-0435e77e28462352a87d50c1ed441423.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

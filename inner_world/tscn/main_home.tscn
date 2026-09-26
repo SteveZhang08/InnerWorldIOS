@@ -1,0 +1,640 @@
+[gd_scene load_steps=96 format=4 uid="uid://bv2n0smr67f3k"]
+
+[ext_resource type="Texture2D" uid="uid://dovwkm3rl3pf7" path="res://source/floor/64x64.png" id="1_cnunp"]
+[ext_resource type="Script" uid="uid://bjx8dp158yvdq" path="res://GDScript/Home/tile_map_layer.gd" id="2_ttv02"]
+[ext_resource type="AudioStream" uid="uid://besjpcnjaa7wq" path="res://source/Sounds/家具/木地板吱吱作响1 sound-wood-floor-creaking.mp3" id="3_oij83"]
+[ext_resource type="AudioStream" uid="uid://50bcjqx2uwjw" path="res://source/Sounds/家具/木地板吱吱作响2 sound-wood-floor-creaking-2.mp3" id="4_rahq2"]
+[ext_resource type="Texture2D" uid="uid://wjs7d864rtlf" path="res://source/furniture/carpet.png" id="5_j4usr"]
+[ext_resource type="Script" uid="uid://ob86ibbc6td0" path="res://GDScript/Home/wall.gd" id="6_g6wh3"]
+[ext_resource type="Texture2D" uid="uid://cg34ag3uglbd" path="res://source/Wall/wall-1.png" id="7_12ags"]
+[ext_resource type="Texture2D" uid="uid://cwbyc7g4ny7bq" path="res://source/Wall/wall-corner-1.png" id="7_g6wh3"]
+[ext_resource type="Texture2D" uid="uid://1ahsfgvfflrf" path="res://source/Wall/wall-2.png" id="7_ttv02"]
+[ext_resource type="Texture2D" uid="uid://bqeqvgj2fieoa" path="res://source/Wall/wall-corner-2.png" id="8_12ags"]
+[ext_resource type="Texture2D" uid="uid://cjirnajp6138m" path="res://source/furniture/candles_wall.png" id="8_mk54e"]
+[ext_resource type="Script" uid="uid://0ykemwr0prgh" path="res://GDScript/Home/fire.gd" id="9_e0bgn"]
+[ext_resource type="Texture2D" uid="uid://3j7xedl205yb" path="res://source/Wall/wall-3.png" id="9_mk54e"]
+[ext_resource type="AudioStream" uid="uid://bal00np2ohobx" path="res://source/Sounds/家具/蜡烛燃烧中 the-crackling-sound-of-a-candle-burning.mp3" id="10_b0axa"]
+[ext_resource type="Texture2D" uid="uid://dlhufa1g86qlx" path="res://source/furniture/mirror.png" id="11_6janu"]
+[ext_resource type="Texture2D" uid="uid://cjem72oneapa4" path="res://source/Wall/wall_a_1.png" id="11_mk54e"]
+[ext_resource type="Script" uid="uid://cqpyjg3d2xtcx" path="res://GDScript/Home/Wall/wall_l_1_a.gd" id="12_b0axa"]
+[ext_resource type="Texture2D" uid="uid://dh5t6rhvjn26j" path="res://source/Window/window_1.png" id="12_e0bgn"]
+[ext_resource type="Script" uid="uid://4umicjkkyj05" path="res://GDScript/Home/BOX/box_main.gd" id="12_v61qi"]
+[ext_resource type="Texture2D" uid="uid://hri420scbk3c" path="res://source/furniture/bookshelf.png" id="13_j3sse"]
+[ext_resource type="Script" uid="uid://d0mnndna4fmrc" path="res://GDScript/Home/BOX/Bookshelf/item_list.gd" id="14_xxtub"]
+[ext_resource type="AudioStream" uid="uid://cnn62fqvd2a31" path="res://source/Sounds/家具/衣柜关闭 sound-slamming-the-door-of-an-old-closet.mp3" id="15_26civ"]
+[ext_resource type="Texture2D" uid="uid://3ylgy6njrm6d" path="res://source/Wall/wall-n.png" id="15_b0axa"]
+[ext_resource type="Texture2D" uid="uid://df37i52o6fx3d" path="res://source/furniture/drawer.png" id="16_kt30l"]
+[ext_resource type="Script" uid="uid://bl8jbr8h3uxh" path="res://GDScript/Home/BOX/BedDrawer/item_list.gd" id="17_8jdmj"]
+[ext_resource type="AudioStream" uid="uid://bbn7nd7cq8djh" path="res://source/Sounds/家具/抽屉打开关闭 cabinet-drawers-open-and-close.wav" id="18_13eed"]
+[ext_resource type="Texture2D" uid="uid://b2cf34va4r0jx" path="res://source/furniture/red_bed.png" id="19_0c67w"]
+[ext_resource type="Script" uid="uid://cuaj8wcr611pw" path="res://GDScript/Home/table_down.gd" id="20_85eop"]
+[ext_resource type="Texture2D" uid="uid://dwitn48rjfgul" path="res://source/furniture/table-1.png" id="21_1oeqs"]
+[ext_resource type="Texture2D" uid="uid://beaqpdlp645xx" path="res://source/furniture/chair_back.png" id="22_63hhp"]
+[ext_resource type="Texture2D" uid="uid://b8ok44ea5b02y" path="res://source/furniture/iron_bucket.png" id="23_fyp2m"]
+[ext_resource type="Texture2D" uid="uid://dlifsc0hdbrj7" path="res://source/items/glass_cup.png" id="24_javni"]
+[ext_resource type="Texture2D" uid="uid://cq8qxr5vc25nx" path="res://source/furniture/candles.png" id="25_ld2ak"]
+[ext_resource type="Script" uid="uid://8yh7vwf0iavg" path="res://GDScript/Home/Table/candles.gd" id="26_kcttq"]
+[ext_resource type="Texture2D" uid="uid://ctq0x3qrevrjh" path="res://source/offically/2d_lights_and_shadows_neutral_point_light.webp" id="27_focva"]
+[ext_resource type="AudioStream" uid="uid://dy7lrlcxmpm4i" path="res://source/Sounds/家具/点燃蜡烛 sound-use-a-match-to-light-a-candle.mp3" id="28_lpn4w"]
+[ext_resource type="AudioStream" uid="uid://decgqdhhnyt83" path="res://source/Sounds/家具/吹灭蜡烛 the-sound-where-a-person-slowly-blows-out-a-candle.mp3" id="29_sf0nk"]
+[ext_resource type="Script" uid="uid://dl5wnnhsgfb52" path="res://GDScript/Home/book_table.gd" id="30_l0b7l"]
+[ext_resource type="Texture2D" uid="uid://b7ql210v6te18" path="res://source/furniture/table-2.png" id="31_4j01l"]
+[ext_resource type="Texture2D" uid="uid://din8bht8j8hg3" path="res://source/furniture/chair_side_1.png" id="32_0j7c7"]
+[ext_resource type="Texture2D" uid="uid://dijcpopi4m2qk" path="res://source/furniture/globe.png" id="33_np3fm"]
+[ext_resource type="Script" uid="uid://2o3a3jfs5pua" path="res://GDScript/Home/BookTable/diary_book.gd" id="34_qiwku"]
+[ext_resource type="Texture2D" uid="uid://b8oca21q1m7oc" path="res://source/items/book.png" id="35_v4v21"]
+[ext_resource type="Script" uid="uid://ccv47lwgl5ald" path="res://GDScript/Home/BookTable/item_list.gd" id="36_6loii"]
+[ext_resource type="Script" uid="uid://dt3kq1qbulic7" path="res://GDScript/Home/Hook/hook.gd" id="37_y6uhk"]
+[ext_resource type="Texture2D" uid="uid://1dd46ug3knng" path="res://source/furniture/hook.png" id="38_dh4gl"]
+[ext_resource type="Script" uid="uid://gwyigmnoxjhg" path="res://GDScript/Home/home_map.gd" id="39_24afh"]
+[ext_resource type="Texture2D" uid="uid://tc18sdmd01gy" path="res://source/furniture/drawing.png" id="40_wsesp"]
+[ext_resource type="Texture2D" uid="uid://dlq3n4dw1dv7t" path="res://source/furniture/spr_door_1.png" id="41_h4mk3"]
+[ext_resource type="Script" uid="uid://cy7lx1ruxcfjs" path="res://GDScript/Home/door.gd" id="42_sgjjk"]
+[ext_resource type="Texture2D" uid="uid://ct2r5lrnlps21" path="res://source/offically/2d_lights_and_shadows_neutral_point_light.png" id="43_ep2og"]
+[ext_resource type="Script" uid="uid://blnb2sxtcc55t" path="res://GDScript/Home/Window/light_change.gd" id="44_6erwu"]
+[ext_resource type="Texture2D" uid="uid://bj3towvhfteu7" path="res://icon.svg" id="45_xscyb"]
+[ext_resource type="Script" uid="uid://g2ek177o4bp7" path="res://train.gd" id="46_xbj2v"]
+[ext_resource type="AudioStream" uid="uid://dnchp741thdra" path="res://source/Sounds/Environment/蒸汽机车通过时发出嘟嘟声 steam-locomotive-passage-with-beeps.mp3" id="47_8kksj"]
+[ext_resource type="AudioStream" uid="uid://4psq376aboea" path="res://source/Sounds/Environment/蒸汽机车释放蒸汽 steam-locomotive-releases-steam.mp3" id="48_qj0eh"]
+[ext_resource type="AudioStream" uid="uid://dcw71nt0wf2ti" path="res://source/Sounds/Environment/货运机车进站和通过 freight-locomotive-approaching-and-passing.mp3" id="49_yaqg5"]
+[ext_resource type="Script" uid="uid://dsgelskly2rrc" path="res://GDScript/Home/ClickMove/click_detector.gd" id="51_oij83"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7486t"]
+texture = ExtResource("1_cnunp")
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 2
+0:0/0 = 0
+0:0/1 = 1
+
+[sub_resource type="TileSet" id="TileSet_13hyw"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_7486t")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_yvfvk"]
+streams_count = 2
+stream_0/stream = ExtResource("3_oij83")
+stream_1/stream = ExtResource("4_rahq2")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rahq2"]
+size = Vector2(1153, 529)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_e0bgn"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_mk54e"]
+light_mode = 1
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ni454"]
+size = Vector2(1150, 180.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwrrv"]
+size = Vector2(58, 664.5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8dv2"]
+atlas = ExtResource("8_mk54e")
+region = Rect2(0, 0, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2nhjh"]
+atlas = ExtResource("8_mk54e")
+region = Rect2(16, 0, 16, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ycjd8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8dv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2nhjh")
+}],
+"loop": true,
+"name": &"fire",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5aye6"]
+load_path = "res://.godot/imported/2d_lights_and_shadows_neutral_point_light.webp-86db37b1508fd0da07a28904ed6786ad.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbui1"]
+size = Vector2(64, 61)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onq4g"]
+size = Vector2(103, 153.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xar8m"]
+size = Vector2(102, 62.4375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8oflt"]
+size = Vector2(59, 65.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1676f"]
+size = Vector2(59, 51.625)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fpkf6"]
+size = Vector2(106, 170)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0f2tw"]
+load_path = "res://.godot/imported/bucket_with_water.png-fa5078064d4b6de58e5f092bef8c8fe2.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8odn"]
+size = Vector2(31, 65.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x48y3"]
+size = Vector2(39.5, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8dnuo"]
+size = Vector2(74.75, 38.5625)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xl2yj"]
+size = Vector2(54.5, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pfhwm"]
+size = Vector2(81, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_46ndj"]
+size = Vector2(35.4595, 104.166)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ihkww"]
+streams_count = 3
+stream_0/stream = ExtResource("47_8kksj")
+stream_1/stream = ExtResource("48_qj0eh")
+stream_2/stream = ExtResource("49_yaqg5")
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_cnunp"]
+polygon = PackedVector2Array(-73, 19, -3, 19, -3, 279, -73, 279)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ttv02"]
+polygon = PackedVector2Array(-82, 437, -4, 437, -3, 632, -81, 632)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1sa58"]
+size = Vector2(108, 84.25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d88dk"]
+atlas = ExtResource("25_ld2ak")
+region = Rect2(0, 0, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_122lf"]
+atlas = ExtResource("25_ld2ak")
+region = Rect2(13, 0, 13, 13)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qunjj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d88dk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_122lf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qld6y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8lvlg"]
+size = Vector2(66, 176)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mnfcf"]
+size = Vector2(39.5, 74.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q06xq"]
+size = Vector2(90, 78.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rfmsr"]
+size = Vector2(115, 78.5)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAABAAAAAAAAAAAAAAACAAEAAAAAAAAAAAADAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAAFAAEAAAAAAAAAAAAFAAIAAAAAAAAAAAAGAAIAAAAAAAAAAAAHAAIAAAAAAAAAAAAIAAIAAAAAAAAAAAAJAAIAAAAAAAAAAAAJAAEAAAAAAAAAAAAKAAAAAAAAAAAAAAALAAAAAAAAAAAAAAANAAAAAAAAAAAAAAAOAAEAAAAAAAAAAAAPAAEAAAAAAAAAAAAQAAEAAAAAAAAAAAARAAEAAAAAAAAAAAARAAAAAAAAAAAAAAARAAIAAAAAAAAAAAARAAMAAAAAAAAAAAARAAQAAAAAAAAAAAARAAUAAAAAAAAAAAARAAYAAAAAAAAAAAARAAcAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAEAAAAAAAAAAAABAAIAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAAFAAMAAAAAAAAAAAAFAAQAAAAAAAAAAAAGAAQAAAAAAAAAAAAHAAUAAAAAAAAAAAAHAAYAAAAAAAAAAAAGAAYAAAAAAAAAAAAFAAYAAAAAAAAAAAAEAAYAAAAAAAAAAAADAAYAAAAAAAAAAAACAAYAAAAAAAAAAAACAAUAAAAAAAAAAAADAAUAAAAAAAAAAAAEAAUAAAAAAAAAAAAFAAUAAAAAAAAAAAAGAAUAAAAAAAAAAAAIAAUAAAAAAAAAAAAJAAUAAAAAAAAAAAAJAAQAAAAAAAAAAAAJAAMAAAAAAAAAAAAIAAMAAAAAAAAAAAAHAAMAAAAAAAAAAAAGAAMAAAAAAAAAAAAEAAIAAAAAAAAAAAADAAIAAAAAAAAAAAACAAIAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAGAAEAAAAAAAAAAAAHAAEAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAIAAEAAAAAAAAAAAAKAAEAAAAAAAAAAAALAAEAAAAAAAAAAAAMAAEAAAAAAAAAAAANAAEAAAAAAAAAAAAOAAAAAAAAAAAAAAAPAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAKAAUAAAAAAAAAAAALAAUAAAAAAAAAAAALAAYAAAAAAAAAAAALAAcAAAAAAAAAAAAKAAcAAAAAAAAAAAAJAAcAAAAAAAAAAAAIAAcAAAAAAAAAAAAHAAcAAAAAAAAAAAAEAAQAAAAAAAAAAAADAAQAAAAAAAAAAAACAAQAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAABAAcAAAAAAAAAAAABAAYAAAAAAAAAAAABAAUAAAAAAAAAAAACAAcAAAAAAAAAAAADAAcAAAAAAAAAAAAEAAcAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAkAAAAAAAAAAAABAAgAAAAAAAAAAAABAAkAAAAAAAAAAAACAAgAAAAAAAAAAAACAAkAAAAAAAAAAAADAAgAAAAAAAAAAAADAAkAAAAAAAAAAAAEAAgAAAAAAAAAAAAEAAkAAAAAAAAAAAAFAAcAAAAAAAAAAAAFAAgAAAAAAAAAAAAFAAkAAAAAAAAAAAAGAAcAAAAAAAAAAAAGAAgAAAAAAAAAAAAGAAkAAAAAAAAAAAAHAAQAAAAAAAAAAAAHAAgAAAAAAAAAAAAIAAYAAAAAAAAAAAAIAAgAAAAAAAAAAAAIAAkAAAAAAAAAAAAJAAYAAAAAAAAAAAAJAAgAAAAAAAAAAAAJAAkAAAAAAAAAAAAKAAIAAAAAAAAAAAAKAAMAAAAAAAAAAAAKAAQAAAAAAAAAAAAKAAYAAAAAAAAAAAAKAAgAAAAAAAAAAAAKAAkAAAAAAAAAAAALAAIAAAAAAAAAAAALAAMAAAAAAAAAAAALAAQAAAAAAAAAAAALAAgAAAAAAAAAAAALAAkAAAAAAAAAAAAMAAIAAAAAAAAAAAAMAAMAAAAAAAAAAAAMAAQAAAAAAAAAAAAMAAUAAAAAAAAAAAAMAAYAAAAAAAAAAAAMAAcAAAAAAAAAAAAMAAgAAAAAAAAAAAAMAAkAAAAAAAAAAAANAAIAAAAAAAAAAAANAAMAAAAAAAAAAAANAAQAAAAAAAAAAAANAAUAAAAAAAAAAAANAAYAAAAAAAAAAAANAAcAAAAAAAAAAAANAAgAAAAAAAAAAAANAAkAAAAAAAAAAAAOAAIAAAAAAAAAAAAOAAMAAAAAAAAAAAAOAAQAAAAAAAAAAAAOAAUAAAAAAAAAAAAOAAYAAAAAAAAAAAAOAAcAAAAAAAAAAAAOAAgAAAAAAAAAAAAOAAkAAAAAAAAAAAAPAAIAAAAAAAAAAAAPAAMAAAAAAAAAAAAPAAQAAAAAAAAAAAAPAAUAAAAAAAAAAAAPAAYAAAAAAAAAAAAPAAcAAAAAAAAAAAAPAAgAAAAAAAAAAAAPAAkAAAAAAAAAAAAQAAIAAAAAAAAAAAAQAAMAAAAAAAAAAAAQAAQAAAAAAAAAAAAQAAUAAAAAAAAAAAAQAAYAAAAAAAAAAAAQAAcAAAAAAAAAAAAQAAgAAAAAAAAAAAAQAAkAAAAAAAAAAAARAAgAAAAAAAAAAAARAAkAAAAAAAAAAAAHAAkAAAAAAAAAAAAAAAoAAAAAAAAAAAABAAoAAAAAAAAAAAACAAoAAAAAAAAAAAADAAoAAAAAAAAAAAAHAAoAAAAAAAAAAAAIAAoAAAAAAAAAAAAEAAoAAAAAAAAAAAAFAAoAAAAAAAAAAAAGAAoAAAAAAAAAAAAJAAoAAAAAAAAAAAAKAAoAAAAAAAAAAAALAAoAAAAAAAAAAAAMAAoAAAAAAAAAAAANAAoAAAAAAAAAAAAOAAoAAAAAAAAAAAAPAAoAAAAAAAAAAAAQAAoAAAAAAAAAAAARAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_13hyw")
+script = ExtResource("2_ttv02")
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="TileMapLayer"]
+stream = SubResource("AudioStreamRandomizer_yvfvk")
+
+[node name="ClickDetector" type="Area2D" parent="."]
+script = ExtResource("51_oij83")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickDetector"]
+position = Vector2(573.5, 383.5)
+shape = SubResource("RectangleShape2D_rahq2")
+metadata/_edit_lock_ = true
+
+[node name="carpet" type="Sprite2D" parent="."]
+position = Vector2(472, 498)
+rotation = 1.57076
+scale = Vector2(5.73214, 5.73214)
+texture = ExtResource("5_j4usr")
+
+[node name="wall" type="StaticBody2D" parent="."]
+script = ExtResource("6_g6wh3")
+
+[node name="Corner_L" type="Sprite2D" parent="wall"]
+position = Vector2(0, -1)
+scale = Vector2(2.188, 2.188)
+texture = ExtResource("7_g6wh3")
+
+[node name="Corner_L2" type="Sprite2D" parent="wall"]
+position = Vector2(1152, -1)
+scale = Vector2(2.188, 2.188)
+texture = ExtResource("8_12ags")
+
+[node name="wall_L_1" type="Sprite2D" parent="wall"]
+position = Vector2(-35, 175.875)
+scale = Vector2(2.19531, 3.57083)
+texture = ExtResource("9_mk54e")
+
+[node name="wall_L_1_a" type="Sprite2D" parent="wall"]
+material = SubResource("CanvasItemMaterial_e0bgn")
+position = Vector2(-35, 346)
+scale = Vector2(2.19531, 1.95423)
+texture = ExtResource("11_mk54e")
+script = ExtResource("12_b0axa")
+
+[node name="window" type="Sprite2D" parent="wall"]
+material = SubResource("CanvasItemMaterial_mk54e")
+position = Vector2(-33, 331)
+scale = Vector2(1.9725, 1.9725)
+texture = ExtResource("12_e0bgn")
+script = ExtResource("12_b0axa")
+
+[node name="window2" type="Sprite2D" parent="wall"]
+material = SubResource("CanvasItemMaterial_mk54e")
+position = Vector2(-35, 399)
+scale = Vector2(2.195, 2.195)
+texture = ExtResource("12_e0bgn")
+script = ExtResource("12_b0axa")
+
+[node name="wall_R" type="Sprite2D" parent="wall"]
+position = Vector2(1187, 386.438)
+scale = Vector2(2.19531, 10.5854)
+texture = ExtResource("7_ttv02")
+
+[node name="wall_L_2" type="Sprite2D" parent="wall"]
+position = Vector2(-35, 527.5)
+scale = Vector2(2.19531, 5.88334)
+texture = ExtResource("9_mk54e")
+
+[node name="wall_L_2_d_" type="Sprite2D" parent="wall"]
+position = Vector2(-35, 367)
+scale = Vector2(2.19531, 0.533333)
+texture = ExtResource("9_mk54e")
+script = ExtResource("12_b0axa")
+
+[node name="wall_L_2_d" type="Sprite2D" parent="wall"]
+position = Vector2(-34.5, 357)
+scale = Vector2(2.68182, 1.01667)
+texture = ExtResource("15_b0axa")
+script = ExtResource("12_b0axa")
+
+[node name="wall_U" type="Sprite2D" parent="wall"]
+position = Vector2(576, 33.2812)
+scale = Vector2(9.29032, 2.19539)
+texture = ExtResource("7_12ags")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall"]
+position = Vector2(576, 45.75)
+shape = SubResource("RectangleShape2D_ni454")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="wall"]
+position = Vector2(577, 704)
+shape = SubResource("RectangleShape2D_ni454")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="wall"]
+visible = false
+position = Vector2(-28, 369.75)
+shape = SubResource("RectangleShape2D_iwrrv")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="wall"]
+position = Vector2(1181, 371)
+shape = SubResource("RectangleShape2D_iwrrv")
+metadata/_edit_lock_ = true
+
+[node name="fire" type="AnimatedSprite2D" parent="wall"]
+position = Vector2(799, 31)
+scale = Vector2(2.9375, 2.9375)
+sprite_frames = SubResource("SpriteFrames_ycjd8")
+animation = &"fire"
+script = ExtResource("9_e0bgn")
+
+[node name="PointLight2D" type="PointLight2D" parent="wall/fire"]
+position = Vector2(0.680848, 0)
+scale = Vector2(1.22899, 0.680831)
+color = Color(1, 0.788235, 0.4, 1)
+energy = 1.3
+texture = SubResource("CompressedTexture2D_5aye6")
+metadata/_edit_lock_ = true
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="wall/fire"]
+stream = ExtResource("10_b0axa")
+parameters/looping = true
+
+[node name="mirror" type="Sprite2D" parent="wall"]
+position = Vector2(284, 60)
+scale = Vector2(4.57143, 4.14286)
+texture = ExtResource("11_6janu")
+
+[node name="mirrorInteractionZone" type="Area2D" parent="wall"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall/mirrorInteractionZone"]
+position = Vector2(284, 132)
+shape = SubResource("RectangleShape2D_pbui1")
+
+[node name="Bookshelf" type="StaticBody2D" parent="."]
+script = ExtResource("12_v61qi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Bookshelf"]
+position = Vector2(636, 78)
+scale = Vector2(0.317885, 0.247095)
+texture = ExtResource("13_j3sse")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bookshelf"]
+position = Vector2(635.5, 78.125)
+shape = SubResource("RectangleShape2D_onq4g")
+
+[node name="InteractionZone" type="Area2D" parent="Bookshelf"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bookshelf/InteractionZone"]
+position = Vector2(637, 150)
+shape = SubResource("RectangleShape2D_xar8m")
+
+[node name="Item_List" type="Node2D" parent="Bookshelf"]
+script = ExtResource("14_xxtub")
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="Bookshelf"]
+stream = ExtResource("15_26civ")
+
+[node name="BedDrawer" type="StaticBody2D" parent="."]
+script = ExtResource("12_v61qi")
+
+[node name="Sprite2D" type="Sprite2D" parent="BedDrawer"]
+position = Vector2(438, 115)
+scale = Vector2(2.25255, 2.13492)
+texture = ExtResource("16_kt30l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BedDrawer"]
+position = Vector2(439, 122)
+shape = SubResource("RectangleShape2D_8oflt")
+
+[node name="InteractionZone" type="Area2D" parent="BedDrawer"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BedDrawer/InteractionZone"]
+position = Vector2(439, 157)
+shape = SubResource("RectangleShape2D_1676f")
+
+[node name="Item_List" type="Node2D" parent="BedDrawer"]
+script = ExtResource("17_8jdmj")
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="BedDrawer"]
+stream = ExtResource("18_13eed")
+
+[node name="bed" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="bed"]
+position = Vector2(525.875, 177.968)
+scale = Vector2(3.54032, 3.54032)
+texture = ExtResource("19_0c67w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bed"]
+position = Vector2(526, 178)
+shape = SubResource("RectangleShape2D_fpkf6")
+
+[node name="bucket" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="bucket"]
+position = Vector2(65, 143)
+scale = Vector2(4.27015, 4.27015)
+texture = SubResource("CompressedTexture2D_0f2tw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bucket"]
+position = Vector2(65.5, 35)
+shape = SubResource("RectangleShape2D_v8odn")
+
+[node name="Hook" type="StaticBody2D" parent="."]
+script = ExtResource("37_y6uhk")
+
+[node name="hook" type="Sprite2D" parent="Hook"]
+position = Vector2(812, 66)
+scale = Vector2(2.28125, 2.28125)
+texture = ExtResource("38_dh4gl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hook"]
+position = Vector2(829, 129)
+shape = SubResource("RectangleShape2D_x48y3")
+
+[node name="InteractionZone" type="Area2D" parent="Hook"]
+position = Vector2(738, -185)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hook/InteractionZone"]
+position = Vector2(76.625, 339.281)
+shape = SubResource("RectangleShape2D_8dnuo")
+
+[node name="map" type="StaticBody2D" parent="."]
+script = ExtResource("39_24afh")
+
+[node name="Sprite2D" type="Sprite2D" parent="map"]
+position = Vector2(1098, 131)
+scale = Vector2(3.6875, 3.6875)
+texture = ExtResource("40_wsesp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="map"]
+position = Vector2(1097, 133)
+shape = SubResource("RectangleShape2D_xl2yj")
+
+[node name="InteractionZone" type="Area2D" parent="map"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="map/InteractionZone"]
+position = Vector2(1093.5, 170.5)
+shape = SubResource("RectangleShape2D_pfhwm")
+
+[node name="door" type="Sprite2D" parent="."]
+position = Vector2(922, 66.5)
+scale = Vector2(1.15625, 1.13281)
+texture = ExtResource("41_h4mk3")
+script = ExtResource("42_sgjjk")
+
+[node name="InteractionZone" type="Area2D" parent="door"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door/InteractionZone"]
+position = Vector2(28.973, 29.5725)
+shape = SubResource("RectangleShape2D_46ndj")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.129559, 0.129558, 0.129558, 1)
+
+[node name="Sun" type="PointLight2D" parent="."]
+visible = false
+position = Vector2(0, 334)
+scale = Vector2(51.7082, 49.2969)
+energy = 1.5
+shadow_enabled = true
+texture = ExtResource("43_ep2og")
+texture_scale = 0.05
+script = ExtResource("44_6erwu")
+sun_color = Color(1, 0.901485, 0.70294, 1)
+moon_color = Color(0.00422463, 0.175475, 0.77801, 1)
+metadata/_edit_lock_ = true
+
+[node name="Moon" type="PointLight2D" parent="."]
+position = Vector2(0, 334)
+scale = Vector2(51.7082, 49.2969)
+energy = 1.5
+shadow_enabled = true
+texture = ExtResource("43_ep2og")
+texture_scale = 0.05
+script = ExtResource("44_6erwu")
+moon_color = Color(0.00422463, 0.175475, 0.77801, 1)
+metadata/_edit_lock_ = true
+
+[node name="Train" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-1057, -761)
+texture = ExtResource("45_xscyb")
+script = ExtResource("46_xbj2v")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Train"]
+stream = SubResource("AudioStreamRandomizer_ihkww")
+volume_db = -2.0
+
+[node name="Train_Main" type="AudioStreamPlayer2D" parent="Train"]
+stream = ExtResource("47_8kksj")
+
+[node name="Spawn_Point" type="Marker2D" parent="."]
+position = Vector2(235, 240)
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+position = Vector2(3, 4)
+occluder = SubResource("OccluderPolygon2D_cnunp")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="."]
+position = Vector2(4, -55)
+occluder = SubResource("OccluderPolygon2D_ttv02")
+
+[node name="Interactive" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Table" type="StaticBody2D" parent="Interactive"]
+position = Vector2(466, 421)
+script = ExtResource("20_85eop")
+
+[node name="table" type="Sprite2D" parent="Interactive/Table"]
+position = Vector2(0.399994, -1.48865)
+scale = Vector2(7.46875, 7.46875)
+texture = ExtResource("21_1oeqs")
+
+[node name="chair_1" type="Sprite2D" parent="Interactive/Table"]
+position = Vector2(59.4, 43.5114)
+scale = Vector2(6.45, 6.45)
+texture = ExtResource("22_63hhp")
+
+[node name="chair_2" type="Sprite2D" parent="Interactive/Table"]
+position = Vector2(-26.6, 43.5114)
+scale = Vector2(6.45, 6.45)
+texture = ExtResource("22_63hhp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Interactive/Table"]
+position = Vector2(-463.6, -367.489)
+polygon = PackedVector2Array(285, 336, 643, 336, 643, 410, 557, 410, 557, 451, 406, 451, 406, 410, 285, 410)
+
+[node name="bucket" type="Sprite2D" parent="Interactive/Table"]
+position = Vector2(108.4, -13.4886)
+scale = Vector2(3.11458, 2.22569)
+texture = ExtResource("23_fyp2m")
+
+[node name="glass_cup" type="Sprite2D" parent="Interactive/Table"]
+position = Vector2(132.4, -6.48862)
+scale = Vector2(1.90624, 1.90624)
+texture = ExtResource("24_javni")
+
+[node name="InteractionZone" type="Area2D" parent="Interactive/Table"]
+position = Vector2(-12.6, -35.4886)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactive/Table/InteractionZone"]
+position = Vector2(183, 84)
+shape = SubResource("RectangleShape2D_1sa58")
+
+[node name="candles" type="AnimatedSprite2D" parent="Interactive/Table"]
+position = Vector2(-95.6, -49.4886)
+scale = Vector2(4.38636, 4.38636)
+sprite_frames = SubResource("SpriteFrames_qunjj")
+script = ExtResource("26_kcttq")
+
+[node name="PointLight2D" type="PointLight2D" parent="Interactive/Table/candles"]
+position = Vector2(-1.78814e-06, -1.82383)
+scale = Vector2(0.709076, 0.709076)
+color = Color(1, 0.788235, 0.4, 1)
+energy = 1.3
+texture = ExtResource("27_focva")
+metadata/_edit_lock_ = true
+
+[node name="InteractionZone" type="Area2D" parent="Interactive/Table/candles"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactive/Table/candles/InteractionZone"]
+position = Vector2(-0.113983, -2.52332)
+shape = SubResource("RectangleShape2D_qld6y")
+
+[node name="Fire" type="AudioStreamPlayer2D" parent="Interactive/Table/candles"]
+stream = ExtResource("28_lpn4w")
+
+[node name="UnFire" type="AudioStreamPlayer2D" parent="Interactive/Table/candles"]
+stream = ExtResource("29_sf0nk")
+
+[node name="BookTable" type="StaticBody2D" parent="Interactive"]
+position = Vector2(34, 364)
+script = ExtResource("30_l0b7l")
+
+[node name="table" type="Sprite2D" parent="Interactive/BookTable"]
+position = Vector2(3, 1)
+scale = Vector2(4.5625, 4.5625)
+texture = ExtResource("31_4j01l")
+
+[node name="tableCollisionShape2D" type="CollisionShape2D" parent="Interactive/BookTable"]
+position = Vector2(0, 9)
+shape = SubResource("RectangleShape2D_8lvlg")
+
+[node name="chair" type="Sprite2D" parent="Interactive/BookTable"]
+position = Vector2(73, 3)
+scale = Vector2(3.66667, 3.66667)
+texture = ExtResource("32_0j7c7")
+
+[node name="chairCollisionShape2D" type="CollisionShape2D" parent="Interactive/BookTable"]
+position = Vector2(72, 13.75)
+shape = SubResource("RectangleShape2D_mnfcf")
+
+[node name="globe" type="Sprite2D" parent="Interactive/BookTable"]
+position = Vector2(1, 1)
+scale = Vector2(3.03125, 3.03125)
+texture = ExtResource("33_np3fm")
+
+[node name="InteractionZone" type="Area2D" parent="Interactive/BookTable"]
+position = Vector2(-34, -356)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactive/BookTable/InteractionZone"]
+position = Vector2(46, 448)
+shape = SubResource("RectangleShape2D_q06xq")
+
+[node name="diary_book" type="Node2D" parent="Interactive/BookTable"]
+position = Vector2(14, -89)
+script = ExtResource("34_qiwku")
+
+[node name="diary_book" type="Sprite2D" parent="Interactive/BookTable/diary_book"]
+position = Vector2(-4.00001, 5)
+rotation = -1.1973
+texture = ExtResource("35_v4v21")
+
+[node name="InteractionZone" type="Area2D" parent="Interactive/BookTable/diary_book"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactive/BookTable/diary_book/InteractionZone"]
+position = Vector2(10.5, -23)
+shape = SubResource("RectangleShape2D_rfmsr")
+
+[node name="Item_List" type="Node2D" parent="Interactive/BookTable/diary_book"]
+script = ExtResource("36_6loii")

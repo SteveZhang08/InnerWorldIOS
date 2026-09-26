@@ -1,0 +1,10 @@
+# 不提交的素材目录
+Movie/
+others/
+
+# Godot 缓存
+.godot/
+
+# 系统文件
+.DS_Store
+Thumbs.db

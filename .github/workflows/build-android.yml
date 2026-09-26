@@ -1,0 +1,41 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Decode Keystore
+        run: |
+          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > release.keystore
+
+      - name: Godot Android Export
+        uses: dulvui/godot-android-export@v4.0.0
+        with:
+          working-directory: inner_world
+          godot-version: 4.4-stable
+          keystore-path: ${{ github.workspace }}/release.keystore
+          keystore-user: ${{ secrets.ANDROID_KEYSTORE_ALIAS }}
+          keystore-password: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-apk
+          path: inner_world/**/*.apk
+          retention-days: 14

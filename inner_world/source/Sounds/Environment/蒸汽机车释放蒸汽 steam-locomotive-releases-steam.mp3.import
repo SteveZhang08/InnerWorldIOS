@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://4psq376aboea"
+path="res://.godot/imported/蒸汽机车释放蒸汽 steam-locomotive-releases-steam.mp3-238530e5daac8f7a75c43c1f1be13f71.mp3str"
+
+[deps]
+
+source_file="res://source/Sounds/Environment/蒸汽机车释放蒸汽 steam-locomotive-releases-steam.mp3"
+dest_files=["res://.godot/imported/蒸汽机车释放蒸汽 steam-locomotive-releases-steam.mp3-238530e5daac8f7a75c43c1f1be13f71.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkid2kacpa70"
+path="res://.godot/imported/剑已出鞘 the-sword-is-taken-out-of-the-scabbard.mp3-abf68970fd4774ba40823f948d4a8204.mp3str"
+
+[deps]
+
+source_file="res://source/Sounds/Item/剑已出鞘 the-sword-is-taken-out-of-the-scabbard.mp3"
+dest_files=["res://.godot/imported/剑已出鞘 the-sword-is-taken-out-of-the-scabbard.mp3-abf68970fd4774ba40823f948d4a8204.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bal00np2ohobx"
+path="res://.godot/imported/蜡烛燃烧中 the-crackling-sound-of-a-candle-burning.mp3-71c1923816351746071f9ab306063edc.mp3str"
+
+[deps]
+
+source_file="res://source/Sounds/家具/蜡烛燃烧中 the-crackling-sound-of-a-candle-burning.mp3"
+dest_files=["res://.godot/imported/蜡烛燃烧中 the-crackling-sound-of-a-candle-burning.mp3-71c1923816351746071f9ab306063edc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

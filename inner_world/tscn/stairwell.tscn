@@ -1,0 +1,318 @@
+[gd_scene load_steps=30 format=3 uid="uid://cvy570w2tphvw"]
+
+[ext_resource type="Script" uid="uid://bgsofb3p2fxkl" path="res://GDScript/CES/rich_text_label.gd" id="1_mvq44"]
+[ext_resource type="Texture2D" uid="uid://crceuqq1hrqo" path="res://player/village/Rustic Swordsman_.png" id="2_ct1ou"]
+[ext_resource type="Script" uid="uid://cq3reguuu8mw1" path="res://GDScript/NPC_enemy/village.gd" id="2_r08j7"]
+[ext_resource type="Texture2D" uid="uid://c02vuxwi1ef45" path="res://source/Particle/blood.png" id="4_os8t4"]
+[ext_resource type="Script" uid="uid://dlobke2k1osw5" path="res://GDScript/NPC_enemy/deep_seek.gd" id="5_qlk36"]
+[ext_resource type="Texture2D" uid="uid://bewpeid0bb6en" path="res://source/others_/deepseek-color.png" id="6_4tq20"]
+[ext_resource type="Script" uid="uid://bhx5tjmr5ye5l" path="res://GDScript/NPC_enemy/doubao.gd" id="6_4yf67"]
+[ext_resource type="Texture2D" uid="uid://cisvndyrdg3pr" path="res://source/others_/doubao-color.png" id="8_48att"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ct1ou"]
+size = Vector2(63, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_os8t4"]
+size = Vector2(69.3149, 105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r08j7"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_os8t4"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qlk36"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4yf67"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdc3j"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tq20"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48att"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_olw8u"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8cgi"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uogdg"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kh8ey"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12l7f"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x8vrv"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7m0v"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bdsx"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sr7de"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cto3"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lmr0e"]
+atlas = ExtResource("2_ct1ou")
+region = Rect2(160, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u1h5r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r08j7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_os8t4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qlk36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4yf67")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdc3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4tq20")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48att")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olw8u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8cgi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uogdg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kh8ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12l7f")
+}],
+"loop": false,
+"name": &"sword",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x8vrv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7m0v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0bdsx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sr7de")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cto3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lmr0e")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 107.0
+offset_right = 960.0
+offset_bottom = 547.0
+theme_override_font_sizes/normal_font_size = 24
+text = "感谢你的测试，本次测试已结束。
+请将此页面截图发送至SteveZhang08，并报告发现的BUG
+调试数据：
+XXXXXX
+XXXXXXX
+XXXXXX
+XXXXXX
+XXXXXX
+再次感谢你的参与"
+script = ExtResource("1_mvq44")
+
+[node name="Interactive" type="Node2D" parent="."]
+
+[node name="NPC" type="CharacterBody2D" parent="Interactive" groups=["NPC"]]
+position = Vector2(119, 142)
+script = ExtResource("2_r08j7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactive/NPC"]
+position = Vector2(-0.132019, -0.632019)
+shape = SubResource("RectangleShape2D_ct1ou")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Interactive/NPC"]
+offset_left = -57.0
+offset_top = -124.0
+offset_right = 122.0
+offset_bottom = -79.0
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Interactive/NPC"]
+position = Vector2(2, -38)
+emitting = false
+amount = 20
+texture = ExtResource("4_os8t4")
+lifetime = 0.3
+one_shot = true
+initial_velocity_min = 121.21
+initial_velocity_max = 181.82
+
+[node name="Visual" type="Node2D" parent="Interactive/NPC"]
+
+[node name="AttackArea" type="Area2D" parent="Interactive/NPC/Visual"]
+position = Vector2(-0.765799, -7.13233)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactive/NPC/Visual/AttackArea"]
+position = Vector2(67.1084, -21.3677)
+shape = SubResource("RectangleShape2D_os8t4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Interactive/NPC/Visual"]
+position = Vector2(4.36798, -28.632)
+scale = Vector2(4.398, 4.398)
+sprite_frames = SubResource("SpriteFrames_u1h5r")
+animation = &"sword"
+
+[node name="DeepSeek" type="CharacterBody2D" parent="Interactive" groups=["NPC"]]
+position = Vector2(392, 85)
+script = ExtResource("5_qlk36")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactive/DeepSeek"]
+position = Vector2(-0.132019, -0.632019)
+shape = SubResource("RectangleShape2D_ct1ou")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Interactive/DeepSeek"]
+offset_left = -57.0
+offset_top = -124.0
+offset_right = 122.0
+offset_bottom = -79.0
+text = "DEEPSEEK
+"
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Interactive/DeepSeek"]
+position = Vector2(2, -38)
+emitting = false
+amount = 20
+texture = ExtResource("4_os8t4")
+lifetime = 0.3
+one_shot = true
+initial_velocity_min = 121.21
+initial_velocity_max = 181.82
+
+[node name="Visual" type="Node2D" parent="Interactive/DeepSeek"]
+
+[node name="AttackArea" type="Area2D" parent="Interactive/DeepSeek/Visual"]
+position = Vector2(-0.765799, -7.13233)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactive/DeepSeek/Visual/AttackArea"]
+position = Vector2(67.1084, -21.3677)
+shape = SubResource("RectangleShape2D_os8t4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Interactive/DeepSeek/Visual"]
+position = Vector2(4.36798, -28.632)
+scale = Vector2(4.398, 4.398)
+sprite_frames = SubResource("SpriteFrames_u1h5r")
+animation = &"sword"
+
+[node name="Sprite2D" type="Sprite2D" parent="Interactive/DeepSeek"]
+position = Vector2(2, -140)
+scale = Vector2(0.0703125, 0.0703125)
+texture = ExtResource("6_4tq20")
+
+[node name="Doubao" type="CharacterBody2D" parent="Interactive" groups=["NPC"]]
+position = Vector2(485, 278)
+script = ExtResource("6_4yf67")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactive/Doubao"]
+position = Vector2(-0.132019, -0.632019)
+shape = SubResource("RectangleShape2D_ct1ou")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Interactive/Doubao"]
+offset_left = -57.0
+offset_top = -124.0
+offset_right = 122.0
+offset_bottom = -79.0
+text = "DOUBAO"
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Interactive/Doubao"]
+position = Vector2(2, -38)
+emitting = false
+amount = 20
+texture = ExtResource("4_os8t4")
+lifetime = 0.3
+one_shot = true
+initial_velocity_min = 121.21
+initial_velocity_max = 181.82
+
+[node name="Visual" type="Node2D" parent="Interactive/Doubao"]
+
+[node name="AttackArea" type="Area2D" parent="Interactive/Doubao/Visual"]
+position = Vector2(-0.765799, -7.13233)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactive/Doubao/Visual/AttackArea"]
+position = Vector2(67.1084, -21.3677)
+shape = SubResource("RectangleShape2D_os8t4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Interactive/Doubao/Visual"]
+position = Vector2(4.36798, -28.632)
+scale = Vector2(4.398, 4.398)
+sprite_frames = SubResource("SpriteFrames_u1h5r")
+animation = &"sword"
+
+[node name="Sprite2D" type="Sprite2D" parent="Interactive/Doubao"]
+position = Vector2(0, -141)
+scale = Vector2(0.0703125, 0.0703125)
+texture = ExtResource("8_48att")

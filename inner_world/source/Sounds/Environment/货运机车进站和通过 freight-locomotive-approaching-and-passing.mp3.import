@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcw71nt0wf2ti"
+path="res://.godot/imported/货运机车进站和通过 freight-locomotive-approaching-and-passing.mp3-1a52200d653dce0c668b95190a5f453e.mp3str"
+
+[deps]
+
+source_file="res://source/Sounds/Environment/货运机车进站和通过 freight-locomotive-approaching-and-passing.mp3"
+dest_files=["res://.godot/imported/货运机车进站和通过 freight-locomotive-approaching-and-passing.mp3-1a52200d653dce0c668b95190a5f453e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,4 @@
+MutterPixel : spr_door_1
+mfy_0311 : grandbook
+LCSkeleton/Robin Norkum : stained paper 1 (texture)
+David Capello : Aseprite Font

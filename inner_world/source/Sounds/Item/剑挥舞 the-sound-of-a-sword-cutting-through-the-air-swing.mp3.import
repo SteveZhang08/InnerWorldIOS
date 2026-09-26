@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbwoj0x0sv2gi"
+path="res://.godot/imported/剑挥舞 the-sound-of-a-sword-cutting-through-the-air-swing.mp3-ac925266278a75fb3ca49842c9ee2d21.mp3str"
+
+[deps]
+
+source_file="res://source/Sounds/Item/剑挥舞 the-sound-of-a-sword-cutting-through-the-air-swing.mp3"
+dest_files=["res://.godot/imported/剑挥舞 the-sound-of-a-sword-cutting-through-the-air-swing.mp3-ac925266278a75fb3ca49842c9ee2d21.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

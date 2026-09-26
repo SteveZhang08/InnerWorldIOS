@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bbn7nd7cq8djh"
+path="res://.godot/imported/抽屉打开关闭 cabinet-drawers-open-and-close.wav-bd3b379852108c264786c61deb5fc944.sample"
+
+[deps]
+
+source_file="res://source/Sounds/家具/抽屉打开关闭 cabinet-drawers-open-and-close.wav"
+dest_files=["res://.godot/imported/抽屉打开关闭 cabinet-drawers-open-and-close.wav-bd3b379852108c264786c61deb5fc944.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

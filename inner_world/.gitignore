@@ -1,0 +1,7 @@
+# Godot 4+ specific ignores
+.godot/
+
+# 只忽略 Android 构建产物（如果以后生成）
+/android/build/.gradle/
+/android/build/build/
+/android/build/local.properties
