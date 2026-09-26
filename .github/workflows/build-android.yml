@@ -20,22 +20,43 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools platforms;android-34 build-tools;34.0.0'
+
+      - name: Download Godot headless
+        run: |
+          curl -L \
+            "https://github.com/godotengine/godot-builds/releases/download/4.4-stable/Godot_v4.4-stable_linux.x86_64.zip" \
+            -o godot.zip
+          unzip -q godot.zip -d godot
+          chmod +x godot/Godot_v4.4-stable_linux.x86_64
+
+      - name: Install export templates
+        run: |
+          templates_root="$HOME/.local/share/godot/export_templates"
+          mkdir -p "$templates_root"
+          cp -R "inner_world/export_templates/." "$templates_root/"
+
       - name: Decode Keystore
         run: |
           echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > release.keystore
 
-      - name: Godot Android Export
-        uses: dulvui/godot-android-export@v4.0.0
-        with:
-          working-directory: inner_world
-          godot-version: 4.4-stable
-          keystore-path: ${{ github.workspace }}/release.keystore
-          keystore-user: ${{ secrets.ANDROID_KEYSTORE_ALIAS }}
-          keystore-password: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+      - name: Export APK
+        env:
+          GODOT_ANDROID_KEYSTORE_RELEASE_PATH: ${{ github.workspace }}/release.keystore
+          GODOT_ANDROID_KEYSTORE_RELEASE_USER: ${{ secrets.ANDROID_KEYSTORE_ALIAS }}
+          GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          mkdir -p inner_world/build/android
+          godot/Godot_v4.4-stable_linux.x86_64 --headless --path inner_world \
+            --install-android-build-template \
+            --export-release "Android" build/android/${GITHUB_REPOSITORY##*/}.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: android-apk
-          path: inner_world/**/*.apk
+          path: inner_world/build/android/**/*.apk
           retention-days: 14
