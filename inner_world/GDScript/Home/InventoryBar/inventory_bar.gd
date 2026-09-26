@@ -52,6 +52,7 @@ func _on_slot_clicked(slot_index: int):
 	item_zone_show(slot_index)
 
 func _get_item_id():
+	'''获取当前手持物品id'''
 	return InventoryManager.slots[item_zone_id]
 
 func _get_item_texture():

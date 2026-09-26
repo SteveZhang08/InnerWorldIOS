@@ -1,8 +1,9 @@
-[gd_scene load_steps=114 format=4 uid="uid://dsuh0me2ohpm7"]
+[gd_scene load_steps=116 format=4 uid="uid://dsuh0me2ohpm7"]
 
 [ext_resource type="Script" uid="uid://c0tqj08qlnown" path="res://GDScript/Main.gd" id="1_u08rc"]
 [ext_resource type="Script" uid="uid://bvs7v4453b8um" path="res://GDScript/Home/ui.gd" id="2_1v6st"]
 [ext_resource type="Texture2D" uid="uid://c8c41pmwmeene" path="res://source/ui/time_panel.png" id="3_ke40w"]
+[ext_resource type="Script" uid="uid://dtsa7qhqdglvm" path="res://GDScript/Home/UI/mobile_ui.gd" id="3_l3cp2"]
 [ext_resource type="Script" uid="uid://ol6srysw0cmm" path="res://GDScript/Home/UI_LU/time_show.gd" id="4_um2bg"]
 [ext_resource type="Texture2D" uid="uid://cule07vae1vru" path="res://source/ui/Backpack/bag.png" id="5_pcic3"]
 [ext_resource type="Script" uid="uid://bhiakd2dvwfif" path="res://GDScript/Home/BackPack/icon.gd" id="6_l3cp2"]
@@ -69,6 +70,8 @@
 [ext_resource type="Script" uid="uid://btlx8ru4aehv8" path="res://GDScript/Home/Player/Camera/camera_2d.gd" id="63_o8pab"]
 [ext_resource type="Script" uid="uid://cng63em7mnjuj" path="res://GDScript/Home/Player/Hint/hint_click.gd" id="64_jhkbf"]
 [ext_resource type="Texture2D" uid="uid://c02vuxwi1ef45" path="res://source/Particle/blood.png" id="65_nkskv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_suyx2"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r3ryn"]
 
@@ -1006,7 +1009,41 @@ script = ExtResource("1_u08rc")
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("2_1v6st")
 
-[node name="Virtual Joystick" parent="UI" instance=ExtResource("42_1v6st")]
+[node name="Mobile_UI" type="Panel" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_suyx2")
+script = ExtResource("3_l3cp2")
+
+[node name="Action_Button" type="Button" parent="UI/Mobile_UI"]
+offset_left = 941.0
+offset_top = 434.0
+offset_right = 1104.0
+offset_bottom = 510.0
+focus_mode = 0
+theme_override_font_sizes/font_size = 27
+text = "Action"
+icon = ExtResource("59_be1ya")
+expand_icon = true
+script = ExtResource("44_um2bg")
+
+[node name="Attack_Button" type="Button" parent="UI/Mobile_UI"]
+offset_left = 941.0
+offset_top = 335.0
+offset_right = 1104.0
+offset_bottom = 411.0
+focus_mode = 0
+theme_override_font_sizes/font_size = 27
+text = "Attack"
+icon = ExtResource("43_ke40w")
+expand_icon = true
+script = ExtResource("46_pcic3")
+
+[node name="Virtual Joystick" parent="UI/Mobile_UI" instance=ExtResource("42_1v6st")]
+layout_mode = 1
 action_left = "move_left"
 action_right = "move_right"
 action_up = "move_up"
@@ -2003,30 +2040,6 @@ offset_right = 160.0
 offset_bottom = 49.0
 expand_mode = 1
 stretch_mode = 5
-
-[node name="Action_Button" type="Button" parent="UI"]
-offset_left = 941.0
-offset_top = 434.0
-offset_right = 1104.0
-offset_bottom = 510.0
-focus_mode = 0
-theme_override_font_sizes/font_size = 27
-text = "Action"
-icon = ExtResource("57_dm7af")
-expand_icon = true
-script = ExtResource("44_um2bg")
-
-[node name="Attack_Button" type="Button" parent="UI"]
-offset_left = 941.0
-offset_top = 335.0
-offset_right = 1104.0
-offset_bottom = 411.0
-focus_mode = 0
-theme_override_font_sizes/font_size = 27
-text = "Attack"
-icon = ExtResource("43_ke40w")
-expand_icon = true
-script = ExtResource("46_pcic3")
 
 [node name="YSort" type="Node2D" parent="."]
 y_sort_enabled = true

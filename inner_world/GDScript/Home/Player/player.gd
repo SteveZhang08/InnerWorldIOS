@@ -188,7 +188,7 @@ func _physics_process(delta: float) -> void:
 		move_direction.y += 1
 
 	# ---------- 2. 处理攻击输入 ----------
-	if Input.is_action_just_pressed("attack") and not is_attacking:
+	if Input.is_action_just_pressed("attack") and not is_attacking and Global_Player._is_weapon():
 		attack()
 
 	# ---------- 3. 攻击打断检测（已移除移动打断，现在移动不会打断攻击） ----------

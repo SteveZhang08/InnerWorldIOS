@@ -9,3 +9,6 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func attack():
 	hint._action()
+
+func _process(delta: float) -> void:
+	visible = hint.visible

@@ -1,0 +1,873 @@
+卷 办公 的文件夹 PATH 列表
+卷序列号为 18C5-89A0
+G:.
+|   Helper.txt
+|   README.md
+|   
++---.github
+|   \---workflows
+|           build-android.yml
+|           build-ios-unsigned.yml
+|           
++---inner_world
+|   |   .editorconfig
+|   |   53en.png
+|   |   53en.png.import
+|   |   default_bus_layout.tres
+|   |   export_presets.cfg
+|   |   icon.svg
+|   |   icon.svg.import
+|   |   project.godot
+|   |   train.gd
+|   |   train.gd.uid
+|   |   yzwd.jpg
+|   |   yzwd.jpg.import
+|   |   
+|   +---addons
+|   |   \---virtual_joystick
+|   |       |   plugin.cfg
+|   |       |   virtual_joystick.gd
+|   |       |   virtual_joystick.gd.uid
+|   |       |   virtual_joystick_icon.png
+|   |       |   virtual_joystick_icon.png.import
+|   |       |   virtual_joystick_instantiator.gd
+|   |       |   virtual_joystick_instantiator.gd.uid
+|   |       |   virtual_joystick_plugin.gd
+|   |       |   virtual_joystick_plugin.gd.uid
+|   |       |   virtual_joystick_scene.tscn
+|   |       |   
+|   |       +---previews
+|   |       |       CoverPreview.svg
+|   |       |       CoverPreview.svg.import
+|   |       |       joystick_icon.png
+|   |       |       joystick_icon.png.import
+|   |       |       Logo.svg
+|   |       |       Logo.svg.import
+|   |       |       ShowcasePreview.png
+|   |       |       ShowcasePreview.png.import
+|   |       |       
+|   |       +---test
+|   |       |       player.gd
+|   |       |       player.gd.uid
+|   |       |       test.tscn
+|   |       |       
+|   |       \---textures
+|   |               joystick_base_outline.png
+|   |               joystick_base_outline.png.import
+|   |               joystick_tip.png
+|   |               joystick_tip.png.import
+|   |               joystick_tip_arrows.png
+|   |               joystick_tip_arrows.png.import
+|   |               
+|   +---android
+|   |   |   .build_version
+|   |   |   
+|   |   \---build
+|   |       |   .gdignore
+|   |       |   AndroidManifest.xml
+|   |       |   build.gradle
+|   |       |   config.gradle
+|   |       |   gradle.properties
+|   |       |   gradlew
+|   |       |   gradlew.bat
+|   |       |   settings.gradle
+|   |       |   
+|   |       +---assetPacks
+|   |       |   \---installTime
+|   |       |           build.gradle
+|   |       |           
+|   |       +---gradle
+|   |       |   \---wrapper
+|   |       |           gradle-wrapper.jar
+|   |       |           gradle-wrapper.properties
+|   |       |           
+|   |       +---libs
+|   |       |   +---debug
+|   |       |   |       godot-lib.template_debug.aar
+|   |       |   |       
+|   |       |   \---release
+|   |       |           godot-lib.template_release.aar
+|   |       |           
+|   |       +---res
+|   |       |   +---values
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       themes.xml
+|   |       |   |       
+|   |       |   +---values-ar
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-bg
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-ca
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-cs
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-da
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-de
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-el
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-en
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-es
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-es-rES
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-fa
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-fi
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-fr
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-hi
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-hr
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-hu
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-in
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-it
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-iw
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-ja
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-ko
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-lt
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-lv
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-nb
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-nl
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-pl
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-pt
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-ro
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-ru
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-sk
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-sl
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-sr
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-sv
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-th
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-tl
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-tr
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-uk
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-vi
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-zh
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   +---values-zh-rHK
+|   |       |   |       godot_project_name_string.xml
+|   |       |   |       
+|   |       |   \---values-zh-rTW
+|   |       |           godot_project_name_string.xml
+|   |       |           
+|   |       \---src
+|   |           \---com
+|   |               \---godot
+|   |                   \---game
+|   |                           GodotApp.java
+|   |                           
+|   +---exe
+|   |       rcedit-x64.exe
+|   |       signtool.exe
+|   |       
+|   +---export_templates
+|   |   \---4.4.stable
+|   |           android_debug.apk
+|   |           android_release.apk
+|   |           android_source.zip
+|   |           ios.zip
+|   |           
+|   +---font
+|   |       fusion-pixel-12px-proportional-ja.ttf
+|   |       fusion-pixel-12px-proportional-ja.ttf.import
+|   |       
+|   +---GDScript
+|   |   |   GlobalTime.gd
+|   |   |   GlobalTime.gd.uid
+|   |   |   Global_Player.gd
+|   |   |   Global_Player.gd.uid
+|   |   |   InventoryManager.gd
+|   |   |   InventoryManager.gd.uid
+|   |   |   Main.gd
+|   |   |   Main.gd.uid
+|   |   |   view_book.gd
+|   |   |   view_book.gd.uid
+|   |   |   
+|   |   +---CES
+|   |   |       rich_text_label.gd
+|   |   |       rich_text_label.gd.uid
+|   |   |       
+|   |   +---Home
+|   |   |   |   book_table.gd
+|   |   |   |   book_table.gd.uid
+|   |   |   |   door.gd
+|   |   |   |   door.gd.uid
+|   |   |   |   fire.gd
+|   |   |   |   fire.gd.uid
+|   |   |   |   get_item_info.gd
+|   |   |   |   get_item_info.gd.uid
+|   |   |   |   hint_e.gd
+|   |   |   |   hint_e.gd.uid
+|   |   |   |   home_map.gd
+|   |   |   |   home_map.gd.uid
+|   |   |   |   image_viewer.gd
+|   |   |   |   image_viewer.gd.uid
+|   |   |   |   logo.gd
+|   |   |   |   logo.gd.uid
+|   |   |   |   rich_text_label.gd
+|   |   |   |   rich_text_label.gd.uid
+|   |   |   |   speak.gd
+|   |   |   |   speak.gd.uid
+|   |   |   |   table_down.gd
+|   |   |   |   table_down.gd.uid
+|   |   |   |   table_up.gd
+|   |   |   |   table_up.gd.uid
+|   |   |   |   think.gd
+|   |   |   |   think.gd.uid
+|   |   |   |   think_text.gd
+|   |   |   |   think_text.gd.uid
+|   |   |   |   tile_map_layer.gd
+|   |   |   |   tile_map_layer.gd.uid
+|   |   |   |   ui.gd
+|   |   |   |   ui.gd.uid
+|   |   |   |   wall.gd
+|   |   |   |   wall.gd.uid
+|   |   |   |   
+|   |   |   +---BackPack
+|   |   |   |       back_pack.gd
+|   |   |   |       back_pack.gd.uid
+|   |   |   |       icon.gd
+|   |   |   |       icon.gd.uid
+|   |   |   |       image_l.gd
+|   |   |   |       image_l.gd.uid
+|   |   |   |       item_details_text.gd
+|   |   |   |       item_details_text.gd.uid
+|   |   |   |       item_name.gd
+|   |   |   |       item_name.gd.uid
+|   |   |   |       slot.gd
+|   |   |   |       slot.gd.uid
+|   |   |   |       
+|   |   |   +---BookTable
+|   |   |   |       diary_book.gd
+|   |   |   |       diary_book.gd.uid
+|   |   |   |       item_list.gd
+|   |   |   |       item_list.gd.uid
+|   |   |   |       
+|   |   |   +---BOX
+|   |   |   |   |   box_main.gd
+|   |   |   |   |   box_main.gd.uid
+|   |   |   |   |   
+|   |   |   |   +---BedDrawer
+|   |   |   |   |       item_list.gd
+|   |   |   |   |       item_list.gd.uid
+|   |   |   |   |       
+|   |   |   |   \---Bookshelf
+|   |   |   |           item_list.gd
+|   |   |   |           item_list.gd.uid
+|   |   |   |           
+|   |   |   +---ClickMove
+|   |   |   |       click_detector.gd
+|   |   |   |       click_detector.gd.uid
+|   |   |   |       
+|   |   |   +---Hook
+|   |   |   |       hook.gd
+|   |   |   |       hook.gd.uid
+|   |   |   |       
+|   |   |   +---ImageViewer
+|   |   |   |       rich_text_label.gd
+|   |   |   |       rich_text_label.gd.uid
+|   |   |   |       
+|   |   |   +---InventoryBar
+|   |   |   |       inventory_bar.gd
+|   |   |   |       inventory_bar.gd.uid
+|   |   |   |       slot.gd
+|   |   |   |       slot.gd.uid
+|   |   |   |       
+|   |   |   +---Player
+|   |   |   |   |   item.gd
+|   |   |   |   |   item.gd.uid
+|   |   |   |   |   player.gd
+|   |   |   |   |   player.gd.uid
+|   |   |   |   |   
+|   |   |   |   +---Camera
+|   |   |   |   |       camera_2d.gd
+|   |   |   |   |       camera_2d.gd.uid
+|   |   |   |   |       
+|   |   |   |   \---Hint
+|   |   |   |           hint_click.gd
+|   |   |   |           hint_click.gd.uid
+|   |   |   |           
+|   |   |   +---Table
+|   |   |   |       candles.gd
+|   |   |   |       candles.gd.uid
+|   |   |   |       
+|   |   |   +---UI_Button
+|   |   |   |       action_button.gd
+|   |   |   |       action_button.gd.uid
+|   |   |   |       attack_button.gd
+|   |   |   |       attack_button.gd.uid
+|   |   |   |       
+|   |   |   +---UI_LU
+|   |   |   |       blood_bar.gd
+|   |   |   |       blood_bar.gd.uid
+|   |   |   |       time_show.gd
+|   |   |   |       time_show.gd.uid
+|   |   |   |       
+|   |   |   +---Wall
+|   |   |   |       wall_l_1_a.gd
+|   |   |   |       wall_l_1_a.gd.uid
+|   |   |   |       
+|   |   |   \---Window
+|   |   |           light_change.gd
+|   |   |           light_change.gd.uid
+|   |   |           
+|   |   \---NPC_enemy
+|   |           deep_seek.gd
+|   |           deep_seek.gd.uid
+|   |           doubao.gd
+|   |           doubao.gd.uid
+|   |           village.gd
+|   |           village.gd.uid
+|   |           
+|   +---icon
+|   |       grandbook.ico
+|   |       
+|   +---INFO
+|   |       name.txt
+|   |       
+|   +---OUTPUT
+|   |   +---android
+|   |   \---iOS
+|   |       |   inner.pck
+|   |       |   PrivacyInfo.xcprivacy
+|   |       |   
+|   |       +---inner
+|   |       |   |   dummy.cpp
+|   |       |   |   dummy.h
+|   |       |   |   dummy.swift
+|   |       |   |   export_options.plist
+|   |       |   |   inner-Info.plist
+|   |       |   |   inner.entitlements
+|   |       |   |   Launch Screen.storyboard
+|   |       |   |   
+|   |       |   +---dylibs
+|   |       |   |       empty
+|   |       |   |       
+|   |       |   +---en.lproj
+|   |       |   |       InfoPlist.strings
+|   |       |   |       
+|   |       |   \---Images.xcassets
+|   |       |       +---AppIcon.appiconset
+|   |       |       |       Contents.json
+|   |       |       |       Icon-1024.png
+|   |       |       |       Icon-114.png
+|   |       |       |       Icon-120-1.png
+|   |       |       |       Icon-120.png
+|   |       |       |       Icon-128.png
+|   |       |       |       Icon-136.png
+|   |       |       |       Icon-152.png
+|   |       |       |       Icon-167.png
+|   |       |       |       Icon-180.png
+|   |       |       |       Icon-192.png
+|   |       |       |       Icon-40.png
+|   |       |       |       Icon-58.png
+|   |       |       |       Icon-60.png
+|   |       |       |       Icon-76.png
+|   |       |       |       Icon-80.png
+|   |       |       |       Icon-87.png
+|   |       |       |       sizes
+|   |       |       |       
+|   |       |       \---SplashImage.imageset
+|   |       |               Contents.json
+|   |       |               splash@2x.png
+|   |       |               splash@3x.png
+|   |       |               
+|   |       +---inner.xcframework
+|   |       |   |   Info.plist
+|   |       |   |   
+|   |       |   +---ios-arm64
+|   |       |   |       libgodot.a
+|   |       |   |       
+|   |       |   \---ios-arm64_x86_64-simulator
+|   |       |           libgodot.a
+|   |       |           
+|   |       +---inner.xcodeproj
+|   |       |   |   project.pbxproj
+|   |       |   |   
+|   |       |   +---project.xcworkspace
+|   |       |   |       contents.xcworkspacedata
+|   |       |   |       
+|   |       |   \---xcshareddata
+|   |       |       \---xcschemes
+|   |       |               inner.xcscheme
+|   |       |               
+|   |       \---MoltenVK.xcframework
+|   |           |   Info.plist
+|   |           |   
+|   |           +---ios-arm64
+|   |           |       libMoltenVK.a
+|   |           |       
+|   |           +---ios-arm64_x86_64-maccatalyst
+|   |           |       libMoltenVK.a
+|   |           |       
+|   |           \---ios-arm64_x86_64-simulator
+|   |                   libMoltenVK.a
+|   |                   
+|   +---player
+|   |   |   1784899901358.png.import
+|   |   |   Forest Archer hands_.png
+|   |   |   Forest Archer hands_.png.import
+|   |   |   Forest Archer hands_1.png
+|   |   |   Forest Archer hands_1.png.import
+|   |   |   player.png
+|   |   |   player.png.import
+|   |   |   player_head.png
+|   |   |   player_head.png.import
+|   |   |   sword.png
+|   |   |   sword.png.import
+|   |   |   
+|   |   +---bg
+|   |   |       home-l.png
+|   |   |       home-l.png.import
+|   |   |       home.png
+|   |   |       home.png.import
+|   |   |       
+|   |   +---ebc40d2767c8aa31
+|   |   |   |   atles.png
+|   |   |   |   atles.png.import
+|   |   |   |   environment_full_pack.aseprite
+|   |   |   |   environment_full_pack.gif
+|   |   |   |   
+|   |   |   +---Bone Warrior
+|   |   |   |       Bone Warrior.aseprite
+|   |   |   |       Bone Warrior_.png
+|   |   |   |       Bone Warrior_.png.import
+|   |   |   |       Bone Warrior_{tag}.json
+|   |   |   |       
+|   |   |   +---Common Villager
+|   |   |   |       Common Villager.aseprite
+|   |   |   |       Common Villager.gif
+|   |   |   |       Common Villager_.png
+|   |   |   |       Common Villager_.png.import
+|   |   |   |       Common Villager_{tag}.json
+|   |   |   |       
+|   |   |   +---Forest Archer
+|   |   |   |       Forest Archer.aseprite
+|   |   |   |       Forest Archer_.png
+|   |   |   |       Forest Archer_.png.import
+|   |   |   |       Forest Archer_{tag}.json
+|   |   |   |       
+|   |   |   +---Primitive Spearthrower
+|   |   |   |       platfrom_{tag}.json
+|   |   |   |       Primitive Spearthrower.aseprite
+|   |   |   |       Primitive Spearthrower_.png
+|   |   |   |       Primitive Spearthrower_.png.import
+|   |   |   |       
+|   |   |   +---Rustic Swordsman
+|   |   |   |       Rustic Swordsman.aseprite
+|   |   |   |       Rustic Swordsman_.png
+|   |   |   |       Rustic Swordsman_.png.import
+|   |   |   |       Rustic Swordsman_{tag}.json
+|   |   |   |       
+|   |   |   +---Spear Guardian
+|   |   |   |       Spear Guardian.aseprite
+|   |   |   |       Spear Guardian.gif
+|   |   |   |       Spear Guardian_.png
+|   |   |   |       Spear Guardian_.png.import
+|   |   |   |       Spear Guardian_{tag}.json
+|   |   |   |       
+|   |   |   \---Stone Defender
+|   |   |           Stone Defender.aseprite
+|   |   |           Stone Defender_.png
+|   |   |           Stone Defender_.png.import
+|   |   |           Stone Defender_{tag}.json
+|   |   |           
+|   |   \---village
+|   |           Rustic Swordsman_.png
+|   |           Rustic Swordsman_.png.import
+|   |           
+|   +---source
+|   |   +---floor
+|   |   |       64x64.png
+|   |   |       64x64.png.import
+|   |   |       
+|   |   +---furniture
+|   |   |       bookshelf.png
+|   |   |       bookshelf.png.import
+|   |   |       bucket_with_water.png
+|   |   |       bucket_with_water.png.import
+|   |   |       candles.png
+|   |   |       candles.png.import
+|   |   |       candles_wall.png
+|   |   |       candles_wall.png.import
+|   |   |       carpet.png
+|   |   |       carpet.png.import
+|   |   |       chair_back.png
+|   |   |       chair_back.png.import
+|   |   |       chair_side_1.png
+|   |   |       chair_side_1.png.import
+|   |   |       door.png.import
+|   |   |       drawer.png
+|   |   |       drawer.png.import
+|   |   |       drawing.png
+|   |   |       drawing.png.import
+|   |   |       globe.png
+|   |   |       globe.png.import
+|   |   |       hook.png
+|   |   |       hook.png.import
+|   |   |       iron_bucket.png
+|   |   |       iron_bucket.png.import
+|   |   |       mirror.png
+|   |   |       mirror.png.import
+|   |   |       red_bed.png
+|   |   |       red_bed.png.import
+|   |   |       spr_door_1.png
+|   |   |       spr_door_1.png.import
+|   |   |       table-1.png
+|   |   |       table-1.png.import
+|   |   |       table-2.png
+|   |   |       table-2.png.import
+|   |   |       
+|   |   +---items
+|   |   |       apple.png
+|   |   |       apple.png.import
+|   |   |       book.png
+|   |   |       book.png.import
+|   |   |       died_emblem.png
+|   |   |       died_emblem.png.import
+|   |   |       emblem.png
+|   |   |       emblem.png.import
+|   |   |       glass_cup.png
+|   |   |       glass_cup.png.import
+|   |   |       grandbook.png
+|   |   |       grandbook.png.import
+|   |   |       id_book.png
+|   |   |       id_book.png.import
+|   |   |       key.png
+|   |   |       key.png.import
+|   |   |       Map.png
+|   |   |       Map.png.import
+|   |   |       old-grandbook.png
+|   |   |       old-grandbook.png.import
+|   |   |       old_paper.png
+|   |   |       old_paper.png.import
+|   |   |       paper.png
+|   |   |       paper.png.import
+|   |   |       sword.png
+|   |   |       sword.png.import
+|   |   |       
+|   |   +---offically
+|   |   |       2d_lights_and_shadows_neutral_point_light.png
+|   |   |       2d_lights_and_shadows_neutral_point_light.png.import
+|   |   |       2d_lights_and_shadows_neutral_point_light.webp
+|   |   |       2d_lights_and_shadows_neutral_point_light.webp.import
+|   |   |       3light.png
+|   |   |       3light.png.import
+|   |   |       light.png
+|   |   |       light.png.import
+|   |   |       
+|   |   +---others_
+|   |   |       deepseek-color.png
+|   |   |       deepseek-color.png.import
+|   |   |       doubao-color.png
+|   |   |       doubao-color.png.import
+|   |   |       
+|   |   +---Particle
+|   |   |       blood.png
+|   |   |       blood.png.import
+|   |   |       sword.png
+|   |   |       sword.png.import
+|   |   |       
+|   |   +---Shortcut
+|   |   |       Enter.tres
+|   |   |       Esc.tres
+|   |   |       LEFT.tres
+|   |   |       M.tres
+|   |   |       RIGHT.tres
+|   |   |       Spacebar.tres
+|   |   |       V.tres
+|   |   |       
+|   |   +---Sounds
+|   |   |   +---Environment
+|   |   |   |       蒸汽机车通过时发出嘟嘟声 steam-locomotive-passage-with-beeps.mp3
+|   |   |   |       蒸汽机车通过时发出嘟嘟声 steam-locomotive-passage-with-beeps.mp3.import
+|   |   |   |       蒸汽机车释放蒸汽 steam-locomotive-releases-steam.mp3
+|   |   |   |       蒸汽机车释放蒸汽 steam-locomotive-releases-steam.mp3.import
+|   |   |   |       货运机车进站和通过 freight-locomotive-approaching-and-passing.mp3
+|   |   |   |       货运机车进站和通过 freight-locomotive-approaching-and-passing.mp3.import
+|   |   |   |       
+|   |   |   +---Item
+|   |   |   |       剑已出鞘 the-sword-is-taken-out-of-the-scabbard.mp3
+|   |   |   |       剑已出鞘 the-sword-is-taken-out-of-the-scabbard.mp3.import
+|   |   |   |       剑挥舞 the-sound-of-a-sword-cutting-through-the-air-swing.mp3
+|   |   |   |       剑挥舞 the-sound-of-a-sword-cutting-through-the-air-swing.mp3.import
+|   |   |   |       剑挥舞-1.wav
+|   |   |   |       剑挥舞-1.wav.import
+|   |   |   |       剑挥舞-2.wav
+|   |   |   |       剑挥舞-2.wav.import
+|   |   |   |       剑挥舞-3.wav
+|   |   |   |       剑挥舞-3.wav.import
+|   |   |   |       
+|   |   |   +---UI
+|   |   |   |       Click_SteveZhang08.wav
+|   |   |   |       Click_SteveZhang08.wav.import
+|   |   |   |       key_press.mp3
+|   |   |   |       key_press.mp3.import
+|   |   |   |       key_press_short.mp3
+|   |   |   |       key_press_short.mp3.import
+|   |   |   |       page_flip.wav
+|   |   |   |       page_flip.wav.import
+|   |   |   |       page_flip_1.wav
+|   |   |   |       page_flip_1.wav.import
+|   |   |   |       Typing.mp3
+|   |   |   |       Typing.mp3.import
+|   |   |   |       
+|   |   |   +---WOOD_Generic_Steps
+|   |   |   |   |   WOOD_Generic_Step_1.wav
+|   |   |   |   |   WOOD_Generic_Step_1.wav.import
+|   |   |   |   |   WOOD_Generic_Step_2.wav
+|   |   |   |   |   WOOD_Generic_Step_2.wav.import
+|   |   |   |   |   WOOD_Generic_Step_3.wav
+|   |   |   |   |   WOOD_Generic_Step_3.wav.import
+|   |   |   |   |   WOOD_Generic_Step_4.wav
+|   |   |   |   |   WOOD_Generic_Step_4.wav.import
+|   |   |   |   |   
+|   |   |   |   \---OGG
+|   |   |   |           WOOD_Generic_Step_1.ogg
+|   |   |   |           WOOD_Generic_Step_1.ogg.import
+|   |   |   |           WOOD_Generic_Step_2.ogg
+|   |   |   |           WOOD_Generic_Step_2.ogg.import
+|   |   |   |           WOOD_Generic_Step_3.ogg
+|   |   |   |           WOOD_Generic_Step_3.ogg.import
+|   |   |   |           WOOD_Generic_Step_4.ogg
+|   |   |   |           WOOD_Generic_Step_4.ogg.import
+|   |   |   |           
+|   |   |   \---家具
+|   |   |           吹灭蜡烛 the-sound-where-a-person-slowly-blows-out-a-candle.mp3
+|   |   |           吹灭蜡烛 the-sound-where-a-person-slowly-blows-out-a-candle.mp3.import
+|   |   |           抽屉关闭 cabinet-drawers-open-and-close.wav
+|   |   |           抽屉关闭 cabinet-drawers-open-and-close.wav.import
+|   |   |           抽屉打开关闭 cabinet-drawers-open-and-close.wav
+|   |   |           抽屉打开关闭 cabinet-drawers-open-and-close.wav.import
+|   |   |           木地板吱吱作响1 sound-wood-floor-creaking.mp3
+|   |   |           木地板吱吱作响1 sound-wood-floor-creaking.mp3.import
+|   |   |           木地板吱吱作响2 sound-wood-floor-creaking-2.mp3
+|   |   |           木地板吱吱作响2 sound-wood-floor-creaking-2.mp3.import
+|   |   |           点燃蜡烛 sound-use-a-match-to-light-a-candle.mp3
+|   |   |           点燃蜡烛 sound-use-a-match-to-light-a-candle.mp3.import
+|   |   |           蜡烛燃烧中 the-crackling-sound-of-a-candle-burning.mp3
+|   |   |           蜡烛燃烧中 the-crackling-sound-of-a-candle-burning.mp3.import
+|   |   |           衣柜关闭 sound-slamming-the-door-of-an-old-closet.mp3
+|   |   |           衣柜关闭 sound-slamming-the-door-of-an-old-closet.mp3.import
+|   |   |           
+|   |   +---ui
+|   |   |   |   frameLong.png
+|   |   |   |   frameLong.png.import
+|   |   |   |   time_panel.png
+|   |   |   |   time_panel.png.import
+|   |   |   |   
+|   |   |   +---Backpack
+|   |   |   |       BackPackPanel.png
+|   |   |   |       BackPackPanel.png.import
+|   |   |   |       backpack_1.png
+|   |   |   |       backpack_1.png.import
+|   |   |   |       bag.png
+|   |   |   |       bag.png.import
+|   |   |   |       InventoryBar_single.png
+|   |   |   |       InventoryBar_single.png.import
+|   |   |   |       item_bank.png
+|   |   |   |       item_bank.png.import
+|   |   |   |       Item_Detail.png
+|   |   |   |       Item_Detail.png.import
+|   |   |   |       Item_Zone.png
+|   |   |   |       Item_Zone.png.import
+|   |   |   |       
+|   |   |   +---Button
+|   |   |   |       buttonSquareFrame.png
+|   |   |   |       buttonSquareFrame.png.import
+|   |   |   |       buttonSquareFrame_hover.png
+|   |   |   |       buttonSquareFrame_hover.png.import
+|   |   |   |       
+|   |   |   +---Key
+|   |   |   |       ENTER_up.png
+|   |   |   |       ENTER_up.png.import
+|   |   |   |       ESC.png
+|   |   |   |       ESC.png.import
+|   |   |   |       E_press.png
+|   |   |   |       E_press.png.import
+|   |   |   |       E_up.png
+|   |   |   |       E_up.png.import
+|   |   |   |       J_press.png
+|   |   |   |       J_press.png.import
+|   |   |   |       LEFT_press.png
+|   |   |   |       LEFT_press.png.import
+|   |   |   |       M_press.png
+|   |   |   |       M_press.png.import
+|   |   |   |       RIGHT_press.png
+|   |   |   |       RIGHT_press.png.import
+|   |   |   |       SPACEBAR_up.png
+|   |   |   |       SPACEBAR_up.png.import
+|   |   |   |       V_press.png
+|   |   |   |       V_press.png.import
+|   |   |   |       
+|   |   |   +---Mouse
+|   |   |   |       ces1.png
+|   |   |   |       ces1.png.import
+|   |   |   |       
+|   |   |   +---Panel
+|   |   |   |       blood_bar.png
+|   |   |   |       blood_bar.png.import
+|   |   |   |       statute.png
+|   |   |   |       statute.png.import
+|   |   |   |       
+|   |   |   +---Speak
+|   |   |   |       4.3.png
+|   |   |   |       4.3.png.import
+|   |   |   |       frameHorizontal.png
+|   |   |   |       frameHorizontal.png.import
+|   |   |   |       
+|   |   |   +---stained paper 1 (texture)
+|   |   |   |       1.png
+|   |   |   |       1.png.import
+|   |   |   |       2.png
+|   |   |   |       2.png.import
+|   |   |   |       3.png
+|   |   |   |       3.png.import
+|   |   |   |       4.png
+|   |   |   |       4.png.import
+|   |   |   |       5.png
+|   |   |   |       5.png.import
+|   |   |   |       6.png
+|   |   |   |       6.png.import
+|   |   |   |       7.png
+|   |   |   |       7.png.import
+|   |   |   |       8.png
+|   |   |   |       8.png.import
+|   |   |   |       9.png
+|   |   |   |       9.png.import
+|   |   |   |       example.png
+|   |   |   |       example.png.import
+|   |   |   |       
+|   |   |   \---touch
+|   |   |           base.png
+|   |   |           base.png.import
+|   |   |           Tip.png
+|   |   |           Tip.png.import
+|   |   |           
+|   |   +---Wall
+|   |   |       wall-1.png
+|   |   |       wall-1.png.import
+|   |   |       wall-2.png
+|   |   |       wall-2.png.import
+|   |   |       wall-3.png
+|   |   |       wall-3.png.import
+|   |   |       wall-corner-1.png
+|   |   |       wall-corner-1.png.import
+|   |   |       wall-corner-2.png
+|   |   |       wall-corner-2.png.import
+|   |   |       wall-n.png
+|   |   |       wall-n.png.import
+|   |   |       wall_a_1.png
+|   |   |       wall_a_1.png.import
+|   |   |       
+|   |   \---Window
+|   |           window_1.png
+|   |           window_1.png.import
+|   |           
+|   +---Theme
+|   |       ces.png
+|   |       ces.png.import
+|   |       pixel.tres
+|   |       
+|   \---tscn
+|           main.tscn
+|           main_home - 副本.tscn
+|           main_home.tscn
+|           main_mobiel.tscn
+|           stairwell.tscn
+|           
++---Movie
+|       movie-1.avi
+|       movie-1.mov
+|       movie-2.avi
+|       movie-2.mov
+|       movie-3.avi
+|       movie-3.mov
+|       movie.avi
+|       movie.mov
+|       movie.mp4
+|       movie~1.mov
+|       movie~1.mp4
+|       movie~2.mov
+|       movie~2.mp4
+|       movie~3.mp4
+|       
+\---others
+        ces.png
+        ChineseMap.png
+        emblem.png
+        g.aseprite
+        IDLE (Python 3.8 64-bit).lnk
+        Map-Big.png
+        Map.aseprite
+        release.keystore
+        release.keystore.base64
+        Sprite-0001.aseprite
+        Sprite-0001.png
+        
