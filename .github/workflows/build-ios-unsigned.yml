@@ -43,7 +43,8 @@ jobs:
       run: |
         templates_root="$HOME/Library/Application Support/Godot/export_templates"
         mkdir -p "$templates_root"
-        cp -R "export_templates/." "$templates_root/"
+        cp -R "inner_world/export_templates/." "$templates_root/"
+    
 
     # 3. Export preset -> Xcode project
     #    TODO: In addition to other mandatory fields (try running the export locally first),
